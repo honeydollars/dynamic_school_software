@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;500;700&display=swap');
+:root{
+    --var-fontfamily: 'Libre Baskerville', serif;
+    --var-fontfamily: 'M PLUS Rounded 1c', sans-serif;
+    --var-fontstyle: italic;
+    --var-fontweight1: 400;
+    --var-fontweight2: 700;
+}
+
+.loginbtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: var(--var-fontfamily);
+    font-weight: var(--var-fontweight2);
+    font-size: 18px;
+    background-color:#5c5208;
+    color: #fff;
+    
+}
+
+.loginbtn:hover{
+    background-color: #cde60e;
+    border: 1px solid black;
+    color: rgb(7, 7, 7);
+}

@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Signika+Negative:wght@400;500;600;700&display=swap');
+
+:root{
+    --var-font-family: 'Libre Baskerville', serif;
+    --var-font-family: 'M PLUS Rounded 1c', sans-serif;
+    --var-font-family: 'Signika Negative', sans-serif;
+    --var-fontstyle: italic;
+    --var-fontweight1: 400;
+    --var-fontweight2: 500;
+    --var-fontweight3: 600;
+    --var-fontweight4: 700;
+}
+
+.exams-container{
+    height:100vh;
+    font-family: var(--var-font-family);
+    margin-bottom: 30px;
+}
+
+.exams-container h1{
+    font-family: var(--var-font-family);
+    font-weight: var(--var-fontweight3);
+    text-align: center;
+    font-size: 40px;
+    color: #2c2704;
+}
+
+.exams-content{
+    display: flex;
+    margin:auto;
+    width:85%;
+}
+
+.exams-leftside{
+    margin-bottom: 30px;
+    margin-right: 50px;
+}
+
+.exams-filter{
+    width: 300px;
+    margin-top:5px;
+    padding:20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    border:1px solid lightgray;
+}
+
+.exams-accordion{
+    margin: auto;
+    border:1px solid lightgray;
+    border-radius: 4px;
+    padding:20px;
+    background-color: whitesmoke;
+}
+
+.exams-filter div{
+    margin:20px;
+    background-color: white;
+    padding:20px;
+    border:1px solid gray;
+    box-shadow: 3px 3px grey ;
+    border-radius: 4px;
+}
+
+label{
+    margin-left:10px;
+    cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+}
+
+/* CSS Media Queries */
+@media screen and (max-width:1280px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-rightside{
+        width:750px;
+    }
+}
+
+@media screen and (max-width:1168px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-rightside{
+        width:650px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-rightside{
+        width:500px;
+    }
+}
+
+@media screen and (max-width:968px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exams-leftside{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .exams-accordion{
+        border:1px solid lightgray;
+        margin-left: 20px;
+        align-self: center;
+    }
+
+    .exams-rightside{
+        width:750px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exams-leftside{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .exams-accordion{
+        border: 1px solid lightgray;
+    }
+
+    .exams-rightside{
+        width:650px;
+    }
+}
+
+@media screen and (max-width:578px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exams-leftside{
+        display: block;
+    }
+
+    .exams-rightside{
+        margin: auto;
+        width:350px;
+    }
+
+    .exams-accordion{
+        margin:auto;
+        border:1px solid lightgray;
+    }
+}
+
+@media screen and (max-width:390px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exams-leftside{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .exams-rightside{
+        margin: auto;
+        width:320px;
+    }
+
+    .exams-accordion{
+        margin:auto;
+        border:1px solid lightgray;
+    }
+}
+
+@media screen and (max-width:360px){
+    .exams-container{
+        width:auto;
+        height:auto;
+    }
+
+    .exams-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .exams-leftside{
+        margin-bottom:20px;
+    }
+
+    .exams-rightside{
+        margin: auto;
+        width:320px;
+    }
+}

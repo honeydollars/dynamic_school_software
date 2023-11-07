@@ -1,0 +1,21 @@
+.signup-container{
+    height: 100vh;
+}
+
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login-redirect{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.remember{
+    display: flex;
+}

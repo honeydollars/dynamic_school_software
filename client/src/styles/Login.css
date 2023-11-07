@@ -1,0 +1,79 @@
+.login-container{
+    height: 100vh;
+}
+
+fieldset{
+    background-color: #fff;
+    margin:auto;
+}
+
+.form-field div{
+    padding: 5px;
+}
+
+.login-form{
+    margin:auto;
+    padding:10px;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.signup-redirect{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+/* CSS Media Queries*/
+@media screen and (max-width:1280px) {
+    .login-form{
+        width:40%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .login-form{
+        width:50%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .login-form{
+        width:50%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .login-form{
+        width:50%;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .login-form{
+        width:auto;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .login-form{
+        margin:auto;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .login-form{
+        margin:auto;
+    }
+}
