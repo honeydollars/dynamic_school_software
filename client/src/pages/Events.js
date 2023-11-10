@@ -119,8 +119,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className='card-link' size="small">Share</Button>
-              <Button className='card-link' size="small"><Link to='/prize-giving'>View More Details</Link></Button>
+              <Button className='card-link' size="small"><Link to='/prize-giving'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -138,8 +137,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='/visiting'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -157,7 +155,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
@@ -176,7 +173,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
@@ -195,7 +191,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
@@ -214,7 +209,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
@@ -233,7 +227,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
@@ -252,7 +245,6 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Share</Button>
               <Button size="small">Learn More</Button>
             </CardActions>
           </Card>
