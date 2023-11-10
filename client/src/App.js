@@ -12,6 +12,7 @@ import Signup from './pages/Signup';
 import Footer from './components/Footer';
 import Prizegiving from './pages/Prizegiving';
 import Visiting from './pages/Visiting';
+import ParentsMeeting from './pages/ParentsMeeting';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}></Route>
           <Route path='/prize-giving' element={<Prizegiving/>}></Route>
           <Route path='/visiting' element={<Visiting/>}></Route>
+          <Route path='/parents-meeting' element={<ParentsMeeting/>}></Route>
           </Routes>
         <Footer/>
       </Router>

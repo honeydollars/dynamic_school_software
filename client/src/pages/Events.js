@@ -73,7 +73,7 @@ const Events = () => {
               </ul>
               <ul>
                   <li>
-                    <Link to='/parents-day'>Parent's Meeting</Link>
+                    <Link to='/parents-meeting'>Parent's Meeting</Link>
                   </li>
               </ul>
               <ul>
@@ -155,7 +155,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='parents-meeting'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>

@@ -20,17 +20,17 @@ const Contact = () => {
                 <legend><h3>Contact Form:</h3></legend>
                 <div className='form-field'>
                   <div>
-                    <TextField  id='outlined-basic' label='First Name:' variant='outlined'></TextField>
+                    <TextField  id='fname' autoComplete='given-name' label='First Name:' variant='outlined'></TextField>
                   </div>
                   <div>
-                    <TextField id='outlined-basic' label='Last Name:' variant='outlined'></TextField>
+                    <TextField id='lname' autoComplete='family-name' label='Last Name:' variant='outlined'></TextField>
                   </div>
                   <div>
-                    <TextField id='outlined-basic' label='Email Address:' variant='outlined'></TextField>
+                    <TextField id='email' autoComplete='email' label='Email Address:' variant='outlined'></TextField>
                   </div>
                   <div>
                     <label htmlFor='message'>Message:</label>
-                    <textarea placeholder='write your  message here!'></textarea>
+                    <textarea id='message' placeholder='write your  message here!'></textarea>
                   </div>
                   <div className='submit'>
                     <Button variant='contained' id='submit-btn'>Submit</Button>
