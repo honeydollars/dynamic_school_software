@@ -11,6 +11,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Footer from './components/Footer';
 import Prizegiving from './pages/Prizegiving';
+import Visiting from './pages/Visiting';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/signup' element={<Signup/>}></Route>
           <Route path='/prize-giving' element={<Prizegiving/>}></Route>
+          <Route path='/visiting' element={<Visiting/>}></Route>
           </Routes>
         <Footer/>
       </Router>

@@ -11,27 +11,27 @@
     --var-fontweight4: 700;
 }
 
-.prizegiving-container{
+.visitingday-container{
     height:auto;
     font-family: var(--var-font-family);
     margin-bottom: 50px;
 }
 
-.prizegiving-container h1{
+.visitingday-container h1{
     text-align: center;
     font-size: 40px;
     color: #2c2704;
     font-weight: var(--var-fontweight3);
 }
 
-.prizegiving-content{
+.visitingday-content{
     width:85%;
     display:flex;
     margin:auto;
     margin-bottom: 50px;
 }
 
-.prizegiving-menu{
+.vday-menu{
     width: 250px;
     margin: auto;
     margin-bottom: 20px;
@@ -42,15 +42,15 @@
     background-color: whitesmoke;
 }
 
-.pg-leftside{
+.vday-leftside{
     margin-right: 20px;
 }
 
-.pg-rightside{
+.vday-rightside{
     margin-left: 20px;
 }
 
-.pg-rightside div{
+.vday-rightside div{
     margin-bottom: 20px;
 }
 
@@ -64,87 +64,87 @@
 }
 
 @media screen and (max-width:1024px) {
-    .prizegiving-container{
+    .visitingday-container{
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: block;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }
 
 @media screen and (max-width:998px) {
-    .prizegiving-container{
+    .visitingday-container{
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: block;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }
 
 @media screen and (max-width:968px) {
-    .prizegiving-container{
+    .visitingday-container{
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: block;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }
 
 @media screen and (max-width:768px) {
-    .prizegiving-container{
+    .visitingday-container{
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: block;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }
 
 @media screen and (max-width:578px) {
-    .prizegiving-container{
+    .visitingday-container{
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: block;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }
 
 @media screen and (max-width:390px) {
-    .prizegiving-container{
+    .visitingday-container{
         width: auto;
         height:auto;
     }
 
-    .prizegiving-content{
+    .visitingday-content{
         display: flex;
         flex-direction: column;
     }
 
-    .pg-rightside{
+    .vday-rightside{
         margin: auto;
     }
 }

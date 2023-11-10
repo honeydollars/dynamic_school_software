@@ -61,7 +61,7 @@ const Exams = () => {
           <div className='exams-accordion'>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"id="panel1a-header">
-                <Typography>Form 4 Streams</Typography>
+                <Typography sx={{fontWeight:600}}>Form 4 Streams</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{display:'flex', flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <div>
@@ -84,7 +84,7 @@ const Exams = () => {
             </Accordion>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"id="panel1a-header">
-                <Typography>Form 3 Streams</Typography>
+                <Typography sx={{fontWeight:600}}>Form 3 Streams</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{display:'flex', flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <div>
@@ -107,7 +107,7 @@ const Exams = () => {
             </Accordion>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"id="panel1a-header">
-                <Typography>Form 2 Streams</Typography>
+                <Typography sx={{fontWeight:600}}>Form 2 Streams</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{display:'flex', flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <div>
@@ -130,7 +130,7 @@ const Exams = () => {
             </Accordion>
             <Accordion>
               <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"id="panel1a-header">
-                <Typography>Form 1 Streams</Typography>
+                <Typography sx={{fontWeight:600}}>Form 1 Streams</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{display:'flex', flexWrap:'wrap', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
                 <div>

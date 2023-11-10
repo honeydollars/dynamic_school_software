@@ -1,18 +1,18 @@
 import React from 'react';
-import '../styles/Prizegiving.css';
+import '../styles/Visiting.css';
 import {Typography, Accordion, AccordionSummary, AccordionDetails, ListItem } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import BestStudent from '../assets/image3.jpg';
 import Students from '../assets/image2.jpg';
 
-const Prizegiving = () => {
+const Visiting = () => {
   return (
-    <div className='prizegiving-container'>
-        <h1>Prize-giving Day</h1>
+    <div className='visitingday-container'>
+        <h1>Visiting Day</h1>
         <hr className='horizontal'/>
-        <div className='prizegiving-content'>
-          <div className='pg-leftside'>
-            <div className='prizegiving-menu'>
+        <div className='visitingday-content'>
+          <div className='vday-leftside'>
+            <div className='vday-menu'>
               <Accordion>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content"id="panel1a-header">
                   <Typography sx={{fontWeight:600}}>Current Event</Typography>
@@ -28,9 +28,9 @@ const Prizegiving = () => {
                 </AccordionSummary>
                 <AccordionDetails sx={{display:'flex', flexDirection:'column', alignItems:'flex-start'}}>
                   <Typography>(Month-Day-Year)</Typography>
-                  <ListItem><a href='#2024feb02'>Feb-02-2024</a></ListItem>
-                  <ListItem><a href='#2024may15'>May-15-2024</a></ListItem>
-                  <ListItem><a href='#2024nov29'>Nov-29-2024</a></ListItem>
+                  <ListItem><a href='#2024mar06'>Mar-06-2024</a></ListItem>
+                  <ListItem><a href='#2024jun27'>Jun-27-2024</a></ListItem>
+                  <ListItem><a href='#2024jul19'>Jul-19-2024</a></ListItem>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -39,20 +39,18 @@ const Prizegiving = () => {
                 </AccordionSummary>
                 <AccordionDetails sx={{display:'flex', flexDirection:'column', alignItems:'flex-start'}}>
                   <Typography>(Month-Day-Year)</Typography>
-                  <ListItem><a href='#2023oct12'>Oct-12-2023</a></ListItem>
-                  <ListItem><a href='#2023mar4'>Mar-04-2023</a></ListItem>
-                  <ListItem><a href='#2022jun15'>Jun-15-2022</a></ListItem>
-                  <ListItem><a href='#2022feb2'>Feb-02-2022</a></ListItem>
-                  <ListItem><a href='#2021nov25'>Nov-25-2021</a></ListItem>
+                  <ListItem><a href='#2023jun5'>Jun-05-2023</a></ListItem>
+                  <ListItem><a href='#2023mar18'>Mar-18-2023</a></ListItem>
+                  <ListItem><a href='#2023feb10'>Feb-10-2023</a></ListItem>
                 </AccordionDetails>
               </Accordion>
             </div>
           </div>
-          <div className='pg-rightside'>
+          <div className='vday-rightside'>
             <Typography variant='h5' component='div' sx={{fontWeight:600, fontSize:'25px'}}>Past Events</Typography>
             <div>
               <>
-                <Typography paragraph={true} id='2023oct12' sx={{fontWeight:600}}>October 12<sup>th</sup> 2023</Typography>
+                <Typography paragraph={true} id='2023oct12' sx={{fontWeight:600}}>June 5<sup>th</sup> 2023</Typography>
                   <Typography paragraph={true}>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -77,7 +75,7 @@ const Prizegiving = () => {
             </div>
             <div>
               <>
-                <Typography paragraph={true} id='2023mar4' sx={{fontWeight:600}}>March 4<sup>th</sup> 2023</Typography>
+                <Typography paragraph={true} id='2023mar4' sx={{fontWeight:600}}>March 18<sup>th</sup> 2023</Typography>
                 <Typography paragraph={true}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -104,36 +102,7 @@ const Prizegiving = () => {
             </div>
             <div>
               <>
-                <Typography paragraph={true} id='2022jun15' sx={{fontWeight:600}}>June 15<sup>th</sup> 2022</Typography>
-                <Typography paragraph={true}>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                  It has survived not only five centuries, but also the leap into electronic typesetting, 
-                  remaining essentially unchanged. 
-                  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                  and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </Typography>
-              </>
-              <div className='eventday-images'>
-                <div>
-                  <iframe src="https://www.youtube.com/embed/io7LinwWw8c?autoplay=1&mute=1" title='beststudentaward' style={{maxWidth:'420px', maxHeight:'345px', marginRight:'20px', border:'1px solid gray', borderRadius:'4px'}}></iframe>
-                </div>
-                <div>
-                  <iframe src="https://www.youtube.com/embed/0COdq1IT5Hc?autoplay=1&mute=1" title='beststudentaward' style={{maxWidth:'420px', maxHeight:'345px', marginRight:'20px', border:'1px solid gray', borderRadius:'4px'}}></iframe>
-                </div>
-                <div>
-                  <iframe src="https://www.youtube.com/embed/USM71JqV30o?autoplay=1&mute=1" title='beststudentaward' style={{maxWidth:'420px', maxHeight:'345px', marginRight:'20px', border:'1px solid gray', borderRadius:'4px'}}></iframe>
-                </div>
-                <div>
-                  <img src={Students} alt='beststudentaward' style={{maxWidth:'300px', maxHeight:'275px', marginRight:'20px', border:'1px solid gray', borderRadius:'4px'}}/>
-                  <br/>
-                </div>
-              </div>
-            </div>
-            <div>
-              <>
-                <Typography paragraph={true} id='2022feb2' sx={{fontWeight:600}}>Feb 2<sup>nd</sup> 2022</Typography>
+                <Typography paragraph={true} id='2022feb2' sx={{fontWeight:600}}>Feb 10<sup>th</sup> 2023</Typography>
                 <Typography paragraph={true}>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -171,4 +140,4 @@ const Prizegiving = () => {
   )
 }
 
-export default Prizegiving;
+export default Visiting;
