@@ -70,7 +70,7 @@ textarea{
 }
 
 .contact-card{
-    border:.5px solid gray;
+    border:1px solid lightgray;
     cursor:pointer;
 }
 
