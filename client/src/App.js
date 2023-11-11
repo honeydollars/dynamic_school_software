@@ -17,6 +17,7 @@ import ScienceCongress from './pages/ScienceCongress';
 import MusicFestivals from './pages/MusicFestivals';
 import GamesDay from './pages/GamesDay';
 import SchoolTrips from './pages/SchoolTrips';
+import Api from './pages/Api';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path='/events/music-festivals' element={<MusicFestivals/>}></Route>
           <Route path='/events/games' element={<GamesDay/>}></Route>
           <Route path='/events/school-trips' element={<SchoolTrips/>}></Route>
+          <Route path='/api-test' element={<Api/>}></Route>
         </Routes>
         <Footer/>
       </Router>
