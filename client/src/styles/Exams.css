@@ -121,7 +121,7 @@ input{
 
     .exams-leftside{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: no-wrap;
         justify-content: space-between;
         align-items: center;
     }
@@ -133,7 +133,7 @@ input{
     }
 
     .exams-rightside{
-        width:750px;
+        width:700px;
     }
 }
 

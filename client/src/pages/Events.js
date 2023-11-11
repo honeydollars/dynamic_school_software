@@ -63,42 +63,37 @@ const Events = () => {
           <div className='events-category'>
               <ul>
                   <li>
-                    <Link to='/prize-giving'>Prize Giving Day</Link>
+                    <Link to='/events/prize-giving'>Prize Giving Day</Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/visiting'>Visiting Day</Link>
+                    <Link to='/events/visiting-day'>Visiting Day</Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/parents-meeting'>Parent's Meeting</Link>
+                    <Link to='/events/parents-meeting'>Parents Meeting</Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/science-congress'>Science & Engineering Fair </Link>
+                    <Link to='/events/science-fair'>Science & Engineering Fair </Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/art-culture'>Art & Culture</Link>
+                    <Link to='/events/music-festivals'>Music, Arts & Culture</Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/festivals'>Music Festivals</Link>
+                    <Link to='/events/games'>Games & Sports</Link>
                   </li>
               </ul>
               <ul>
                   <li>
-                    <Link to='/games-sports'>Games & Sports</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/school-trips'>School Holiday Trips</Link>
+                    <Link to='/events/school-trips'>School Trips</Link>
                   </li>
               </ul>
           </div>
@@ -119,7 +114,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className='card-link' size="small"><Link to='/prize-giving'>See More Details</Link></Button>
+              <Button className='card-link' size="small"><Link to='/events/prize-giving'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -137,7 +132,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className='card-link' size="small"><Link to='/visiting'>See More Details</Link></Button>
+              <Button className='card-link' size="small"><Link to='/events/visiting-day'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -148,14 +143,14 @@ const Events = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
-                Parents' Meeting
+                Parents Meeting
               </Typography>
               <Typography variant="body2" color="text.secondary">
               As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button className='card-link' size="small"><Link to='parents-meeting'>See More Details</Link></Button>
+              <Button className='card-link' size="small"><Link to='/events/parents-meeting'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -173,7 +168,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='/events/science-fair'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -184,32 +179,14 @@ const Events = () => {
             />
             <CardContent>
               <Typography gutterBottom variant="h6" component="div">
-                Arts & Culture
+                Music, Arts & Culture
               </Typography>
               <Typography variant="body2" color="text.secondary">
               As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
-            </CardActions>
-          </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
-            <CardMedia
-              sx={{ height: 140 }}
-              image={Image}
-              title="school-learners"
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                Music Festivals
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
-            </CardContent>
-            <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='/events/music-festivals'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -227,7 +204,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='/events/games'>See More Details</Link></Button>
             </CardActions>
           </Card>
           <Card className='card' sx={{ maxWidth: 300 }}>
@@ -245,7 +222,7 @@ const Events = () => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Button className='card-link' size="small"><Link to='/events/school-trips'>See More Details</Link></Button>
             </CardActions>
           </Card>
         </div>

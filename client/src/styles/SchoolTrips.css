@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Signika+Negative:wght@400;500;600;700&display=swap');
+
+:root{
+    --var-font-family: 'Libre Baskerville', serif;
+    --var-font-family: 'M PLUS Rounded 1c', sans-serif;
+    --var-font-family: 'Signika Negative', sans-serif;
+    --var-fontstyle: italic;
+    --var-fontweight1: 400;
+    --var-fontweight2: 500;
+    --var-fontweight3: 600;
+    --var-fontweight4: 700;
+}
+
+.tripday-container{
+    height:auto;
+    font-family: var(--var-font-family);
+    margin-bottom: 50px;
+}
+
+.tripday-container h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2c2704;
+    font-weight: var(--var-fontweight3);
+}
+
+.tripday-content{
+    width:85%;
+    display:flex;
+    margin:auto;
+    margin-bottom: 50px;
+}
+
+.tday-menu{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border:1px solid lightgray;
+    border-radius:4px;
+    padding:20px;
+    background-color: whitesmoke;
+}
+
+.tday-leftside{
+    margin-right: 20px;
+}
+
+.tday-rightside{
+    margin-left: 20px;
+}
+
+.tday-rightside div{
+    margin-bottom: 20px;
+}
+
+.eventday-images{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .tripday-container{
+        height:auto;
+    }
+
+    .tripday-content{
+        display: block;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .tripday-container{
+        height:auto;
+    }
+
+    .tripday-content{
+        display: block;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .tripday-container{
+        height:auto;
+    }
+
+    .tripday-content{
+        display: block;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .tripday-container{
+        height:auto;
+    }
+
+    .tripday-content{
+        display: block;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .tripday-container{
+        height:auto;
+    }
+
+    .tripday-content{
+        display: block;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .tripday-container{
+        width: auto;
+        height:auto;
+    }
+
+    .tripday-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tday-rightside{
+        margin: auto;
+    }
+}

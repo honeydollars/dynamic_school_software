@@ -55,7 +55,7 @@ const Contact = () => {
                 <Typography variant="h6" component="div" sx={{ mb: 1.5 }}>
                   Email Us
                 </Typography>
-                <Typography sx={{ mb: 1.5 }}><a href='mailto:topsacademy@gmail.com'>topsacademy@gmail.com</a></Typography>
+                <Typography sx={{ mb: 1.5 }}>topsacademy@gmail.com</Typography>
               </CardContent>
             </Card>
             <Card sx={{ minWidth: 275, Height:275, margin:'10px'}} className='contact-card'>
@@ -64,7 +64,7 @@ const Contact = () => {
                 <Typography variant="h6" component="div" sx={{ mb: 1.5 }}>
                   Call Us
                 </Typography>
-                <Typography sx={{ mb: 1.5 }}><a href='tel:'>+2547000111000</a></Typography>
+                <Typography sx={{ mb: 1.5 }}>+25470151070</Typography>
               </CardContent>
             </Card>
             <Card sx={{ minWidth: 275, Height:275, margin:'10px'}} className='contact-card'>

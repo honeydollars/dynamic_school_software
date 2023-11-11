@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=M+PLUS+Rounded+1c:wght@400;500;700&family=Signika+Negative:wght@400;500;600;700&display=swap');
+
+:root{
+    --var-font-family: 'Libre Baskerville', serif;
+    --var-font-family: 'M PLUS Rounded 1c', sans-serif;
+    --var-font-family: 'Signika Negative', sans-serif;
+    --var-fontstyle: italic;
+    --var-fontweight1: 400;
+    --var-fontweight2: 500;
+    --var-fontweight3: 600;
+    --var-fontweight4: 700;
+}
+
+.gamesday-container{
+    height:auto;
+    font-family: var(--var-font-family);
+    margin-bottom: 50px;
+}
+
+.gamesday-container h1{
+    text-align: center;
+    font-size: 40px;
+    color: #2c2704;
+    font-weight: var(--var-fontweight3);
+}
+
+.gamesday-content{
+    width:85%;
+    display:flex;
+    margin:auto;
+    margin-bottom: 50px;
+}
+
+.gday-menu{
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border:1px solid lightgray;
+    border-radius:4px;
+    padding:20px;
+    background-color: whitesmoke;
+}
+
+.gday-leftside{
+    margin-right: 20px;
+}
+
+.gday-rightside{
+    margin-left: 20px;
+}
+
+.gday-rightside div{
+    margin-bottom: 20px;
+}
+
+.eventday-images{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .gamesday-container{
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: block;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .gamesday-container{
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: block;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .gamesday-container{
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: block;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gamesday-container{
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: block;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:578px) {
+    .gamesday-container{
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: block;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .gamesday-container{
+        width: auto;
+        height:auto;
+    }
+
+    .gamesday-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gday-rightside{
+        margin: auto;
+    }
+}

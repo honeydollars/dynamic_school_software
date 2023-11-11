@@ -42,12 +42,9 @@
     align-items: center;
     font-family: var(--var-font-family);
     font-size: 21px;
-    padding: 20px;
 }
 
-.events-leftside{
-    padding: 10px 20px;
-}
+
 
 .eventspage-edit-button{
     display:flex;
@@ -205,10 +202,6 @@ card:hover{
         height:auto;
     }
 
-    .events-container h1{
-        font-size: 35px;
-    }
-
     .events-content{
         display: block;
     }
@@ -237,10 +230,6 @@ card:hover{
     .events-container{
         width: auto;
         height:auto;
-    }
-
-    .events-container h1{
-        font-size: 30px;
     }
 
     .events-content{

@@ -10,9 +10,13 @@ import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Footer from './components/Footer';
-import Prizegiving from './pages/Prizegiving';
+import PrizeGiving from './pages/PrizeGiving';
 import Visiting from './pages/Visiting';
 import ParentsMeeting from './pages/ParentsMeeting';
+import ScienceCongress from './pages/ScienceCongress';
+import MusicFestivals from './pages/MusicFestivals';
+import GamesDay from './pages/GamesDay';
+import SchoolTrips from './pages/SchoolTrips';
 
 function App() {
   return (
@@ -27,10 +31,14 @@ function App() {
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/signup' element={<Signup/>}></Route>
-          <Route path='/prize-giving' element={<Prizegiving/>}></Route>
-          <Route path='/visiting' element={<Visiting/>}></Route>
-          <Route path='/parents-meeting' element={<ParentsMeeting/>}></Route>
-          </Routes>
+          <Route path='/events/prize-giving' element={<PrizeGiving/>}></Route>
+          <Route path='/events/visiting-day' element={<Visiting/>}></Route>
+          <Route path='/events/parents-meeting' element={<ParentsMeeting/>}></Route>
+          <Route path='/events/science-fair' element={<ScienceCongress/>}></Route>
+          <Route path='/events/music-festivals' element={<MusicFestivals/>}></Route>
+          <Route path='/events/games' element={<GamesDay/>}></Route>
+          <Route path='/events/school-trips' element={<SchoolTrips/>}></Route>
+        </Routes>
         <Footer/>
       </Router>
     </div>

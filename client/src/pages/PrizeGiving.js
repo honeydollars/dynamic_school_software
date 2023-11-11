@@ -1,11 +1,11 @@
 import React from 'react';
-import '../styles/Prizegiving.css';
+import '../styles/PrizeGiving.css';
 import {Typography, Accordion, AccordionSummary, AccordionDetails, ListItem } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import BestStudent from '../assets/image3.jpg';
 import Students from '../assets/image2.jpg';
 
-const Prizegiving = () => {
+const PrizeGiving = () => {
   return (
     <div className='prizegiving-container'>
         <h1>Prize-giving Day</h1>
@@ -171,4 +171,4 @@ const Prizegiving = () => {
   )
 }
 
-export default Prizegiving;
+export default PrizeGiving;
