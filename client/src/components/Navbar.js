@@ -5,6 +5,7 @@ import '../styles/Navbar.css';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { LoginOutlined } from '@mui/icons-material';
 import {Drawer, Button, Box} from '@mui/material';
+import Logo from '../assets/logo.png';
 
 const Navbar = () => {
 
@@ -22,6 +23,7 @@ const Navbar = () => {
           <Drawer anchor='left' open={open} onClose={handleClose}>
             <Box p={2} width='250px' textAlign='center' role='presentation'>
               <div className='mobile-navbar-logo'>
+                <img src={Logo} alt='logo'/>
                 <p>Top Scorers Academy</p>
               </div>
               <hr/>
@@ -61,7 +63,7 @@ const Navbar = () => {
           </Drawer>
         </div>
         <div className='navbar-logo'>
-          <p>Top Scorers Academy</p>
+          <img src={Logo} alt='logo'/>
         </div>
         <div className='navbar-links'>
           <nav id='nav-container'>
