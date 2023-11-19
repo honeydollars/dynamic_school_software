@@ -149,16 +149,22 @@
         margin:0;
     }
 
-    .leftside-content h1{
-        font-size: 36px;
+    .leftside-content h3{
+        font-size: 30px;
     }
 
-    .leftside-content p{
+    .p{
         font-size: 21px;
     }
 
     .carousel{
-        display: none;
+        display: block;
+    }
+
+    .carousel-images{
+        height:200px;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -172,16 +178,22 @@
         margin:0;
     }
 
-    .leftside-content h1{
-        font-size: 36px;
+    .leftside-content h3{
+        font-size: 30px;
     }
 
-    .leftside-content p{
+    .p{
         font-size: 21px;
     }
 
     .carousel{
-        display: none;
+        display: block;
+    }
+
+    .carousel-images{
+        height:200px;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -196,16 +208,22 @@
         margin:0;
     }
 
-    .leftside-content h1{
-        font-size: 36px;
+    .leftside-content h3{
+        font-size: 30px;
     }
 
-    .leftside-content p{
+    .p{
         font-size: 21px;
     }
 
     .carousel{
-        display: none;
+        display: block;
+    }
+
+    .carousel-images{
+        height:200px;
+        margin: 0;
+        padding: 0;
     }
 }
 

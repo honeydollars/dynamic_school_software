@@ -5,9 +5,9 @@ const app = express();
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Yeaay, server is up and running!');
+    res.send('Yeah, our server is up and running!');
 });
 
-app.listen(8080, () => {
-    console.log('server is running on port 8080');
+app.listen(8081, () => {
+    console.log('server is running on port 8081');
 });

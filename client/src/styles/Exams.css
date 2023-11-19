@@ -175,18 +175,20 @@ input{
 
     .exams-content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
     .exams-leftside{
         display: block;
+        margin-bottom: 30px;
     }
 
     .exams-rightside{
         margin: auto;
         width:350px;
+        margin-bottom: 30px;
     }
 
     .exams-accordion{
@@ -203,7 +205,7 @@ input{
 
     .exams-content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: flex-start;
         align-items: flex-start;
     }
@@ -216,6 +218,11 @@ input{
     .exams-rightside{
         margin: auto;
         width:320px;
+        margin-bottom: 30px;
+    }
+
+    exams-filter{
+        display:none;
     }
 
     .exams-accordion{

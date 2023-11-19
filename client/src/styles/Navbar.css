@@ -7,21 +7,27 @@
     --var-fontweight2: 700;
 }
 
-.navbar-container{
-    display:flex;
+.header-container{
+    width: 100%;
     background-color: #0b496b;
+}
+
+.navbar-container{
+    width:85%;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     padding:40px 20px;
+    margin: auto;
     margin-bottom:20px;
     font-family: var(--var-fontfamily);
     font-weight: var(--var-fontweight2);
 }
 
 .navbar-logo{
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 5px 5px;
-    border: 1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
 }
 
@@ -33,15 +39,22 @@
     text-transform: uppercase;
 }
 
+.navbar-logo img{
+    width:75px;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+}
+
 nav ul{
     display:inline-block;
     list-style-type:none;
 }
 
 nav ul li{
-    padding: 5px 10px;
-    box-shadow: 5px 6px;
-    border: 1px solid whitesmoke;
+    padding:8px;
+    box-shadow: 4px 4px;
+    border: 1px outset whitesmoke;
     border-radius: 5px;
 }
 
@@ -80,20 +93,32 @@ nav ul li a:hover{
     margin-right: 20px;
 }
 
+.mobile-navbar-logo img{
+    width:50px;
+    margin-right: 2px;
+}
+
+.mobile-navbar-links{
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .mobile-navbar-links nav ul{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
     
 }
 
 .mobile-navbar-links nav ul li{
-    display: flex;
-    justify-content: flex-start;
-    align-items:flex-start ;
+    border-radius: 0;
+    border:1px outset #d3d3d3;
     margin-top: 20px;
-    box-shadow: 3px 3px;
+    box-shadow: 3px 3px #808080;
+    background-color: #f5f5f5;
 }
 
 .mobile-navbar-links nav ul li a{
@@ -101,11 +126,14 @@ nav ul li a:hover{
 }
 
 .mobile-myaccount{
+    display: flex;
+    justify-content: center;
     margin-top: 70px;
 }
 
 .mobile-navbar-logo{
-    width:150px;
+    display:flex;
+    width:250px;
     padding: 3px;
     display:flex;
     justify-content: flex-start;
@@ -114,8 +142,13 @@ nav ul li a:hover{
 }
 
 .mobile-navbar-logo p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     text-transform: uppercase;
     font-weight:bold;
+    font-size: 14px;
+    margin: 1px;
 }
 
 /*CSS Media Queries*/
@@ -134,8 +167,20 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 968px) {
-    .navbar-container{
+    .header-container{
         width:auto;
+        margin:auto;
+    }
+
+    .navbar-container{
+        width:85%;
+        margin: auto;
+        display:flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar-logo img{
+        width: 50px;
     }
 
     .navbar-links{
@@ -144,44 +189,58 @@ nav ul li a:hover{
 }
 
 @media screen and (max-width: 768px) {
+    .header-container{
+        width:auto;
+        margin:auto;
+    }
+
+    .navbar-container{
+        width:85%;
+        margin: auto;
+        display:flex;
+        flex-direction: row-reverse;
+    }
+
+    .navbar-logo img{
+        width: 50px;
+    }
+
     .navbar-links{
         display: none;
     }
 }
 
 @media screen and (max-width:578px) {
-    .navbar-container{
+    .header-container{
         width:auto;
         margin:auto;
     }
 
-    .navbar-logo{
-        display: flex;
-        justify-content: flex-end;
-        width:250px;
-        box-shadow: 4px 4px;
+    .navbar-container{
+        width:85%;
+        margin: auto;
+        display:flex;
+        flex-direction: row-reverse;
     }
 
-    .navbar-logo p{
-        font-size:18px;
+    .navbar-logo img{
+        width: 50px;
     }
 }
 
 @media screen and (max-width:390px) {
-    .navbar-container{
+    .header-container{
         width:auto;
         margin:auto;
     }
 
-    .navbar-logo{
-        display: flex;
-        justify-content: flex-end;
-        width:150px;
-        box-shadow: 4px 4px;
+    .navbar-container{
+        display:flex;
+        flex-direction: row-reverse;
     }
 
-    .navbar-logo p{
-        font-size:15px;
+    .navbar-logo img{
+        width: 50px;
     }
 
     .mobile-view-navbar{
@@ -198,8 +257,7 @@ nav ul li a:hover{
     .navbar-logo{
         display: flex;
         justify-content: flex-end;
-        width:150px;
-        box-shadow: 4px 4px;
+        box-shadow: none;
     }
 
     .navbar-logo p{
