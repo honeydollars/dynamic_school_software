@@ -224,6 +224,10 @@ card:hover{
         display:flex;
         flex-wrap: wrap;
     }
+
+    .events-category ul li:hover{
+        background-color: none;
+    }
 }
 
 @media screen and (max-width: 390px){
@@ -254,6 +258,10 @@ card:hover{
         display:flex;
         flex-wrap: wrap;
     }
+
+    .events-category ul li:hover{
+        background-color: none;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -283,5 +291,9 @@ card:hover{
         width: auto;
         display:flex;
         flex-wrap: wrap;
+    }
+
+    .events-category ul li:hover{
+        background-color: none;
     }
 }
