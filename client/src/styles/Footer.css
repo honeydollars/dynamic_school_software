@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0b496b;
+    background-color: #1d1d1d;
     color: #fff;
     padding: 80px 20px;
 }
@@ -39,7 +39,7 @@
 }
 
 .wisequote{
-    color:rgba(255, 255, 255, 0.6);
+    color:#f5f5f5;
 }
 
 @keyframes icons {
