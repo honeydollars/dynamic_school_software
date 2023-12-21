@@ -78,9 +78,9 @@ const Home = () => {
             <Typography paragraph={true} className='p'>
               As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do. We are committed to open communication and collaboration, so please don't hesitate to reach out if you have any questions or if there's anything we can assist you with.
             </Typography>
-            <label htmlFor='cbox'>Show Less</label>
+            <label className='label' htmlFor='cbox'>Show Less</label>
           </div>  
-            <label htmlFor='cbox'>Read More</label>
+            <label className='label' htmlFor='cbox'>Read More</label>
           </div>
         </div>
       </div>
