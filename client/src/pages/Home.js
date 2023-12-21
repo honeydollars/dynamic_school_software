@@ -64,41 +64,26 @@ const Home = () => {
         </div>
           <Typography variant='h3' align='center'>Top Scorers Academy</Typography>
           <hr className='horizontal'/>
+          <input type='checkbox' id='cbox' name='cbox'></input> 
           <Typography paragraph={true} className='p'>
             We are delighted to extend a warm and heartfelt welcome to students, parents, staff, and visitors to our school's virtual home. At Top Scorers Academy, we believe in the transformative power of education and the boundless potential that lies within each individual.
           </Typography>
           <Typography paragraph={true} className='p'>
             Our school is more than just a physical space;it's a vibrant community where curiosity is nurtured, talents are honed, and lifelong friendships are forged. As you explore our website, you'll discover the diverse array of programs, activities, and opportunities that make up the tapestry of our educational journey.
           </Typography>
-          <div id="readmore">
+          <div className="readmore">
             <Typography paragraph={true} className='p'>
               From our dedicated and passionate educators to our state-of-the-art facilities, every aspect of Top Scorers Academy is designed to create an environment where learning is exciting, interactive, and meaningful. We foster not only academic excellence but also character development, critical thinking, and a sense of responsibility to the global community.
             </Typography>
             <Typography paragraph={true} className='p'>
               As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do. We are committed to open communication and collaboration, so please don't hesitate to reach out if you have any questions or if there's anything we can assist you with.
             </Typography>
+            <label htmlFor='cbox'>Show Less</label>
           </div>  
-            <Button variant='contained' id='readmorebtn'>Read More</Button>
+            <label htmlFor='cbox'>Read More</label>
           </div>
         </div>
       </div>
   );
 }
-/**Read more button function */
-const readMoreBtn = document.getElementById('readmorebtn');
-const moreContent = document.getElementById('readmore');
-
-let isShowContent = false;
-
-readMoreBtn.addEventListener('click', () => {
-  isShowContent = !isShowContent;
-
-  if(isShowContent){
-    moreContent.style.display = 'block';
-    readMoreBtn.textContent = 'Read Less';
-  }else{
-    moreContent.style.display = 'none';
-    readMoreBtn.textContent = 'Read More';
-  };
-});  
 export default Home;

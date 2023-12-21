@@ -83,9 +83,32 @@
     margin-top: 8px;
 }
 
-#readmorebtn:hover{
-    background-color: #7fffd4;
-    color:#000000;
+#cbox{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+    cursor: pointer;
+    background-color: rgb(18, 127, 228);
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid lightgray;
+    color:#ffffff;
+}
+
+.readmore{
+    display: none;
+}
+
+#cbox:checked ~ .readmore{
+    display: block;
+}
+
+#cbox:checked ~ label{
+    display: none;
 }
 
 /* CSS Media Queries */
