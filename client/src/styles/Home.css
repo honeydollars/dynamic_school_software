@@ -83,6 +83,11 @@
     margin-top: 8px;
 }
 
+#readmorebtn:hover{
+    background-color: #7fffd4;
+    color:#000000;
+}
+
 /* CSS Media Queries */
 @media screen and (min-width: 1280px) {
     .homepage-container{
