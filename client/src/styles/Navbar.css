@@ -162,7 +162,7 @@ nav ul li a:hover{
    }
 
    .navbar-links{
-    margin-left: 150px;
+         display: flex;
    }
 }
 

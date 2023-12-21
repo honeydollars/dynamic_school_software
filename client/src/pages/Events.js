@@ -34,7 +34,7 @@ const Events = () => {
       <div className='events-content'>
         <div className='events-leftside'>
           <div className='eventspage-edit-button'>
-            <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
+            <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Add</Button>
             <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
               <Box sx={style}>
                 <Typography id="modal-modal-title" variant="h6" component="h2">
@@ -57,49 +57,9 @@ const Events = () => {
               </Box>
             </Modal>
           </div>
-          <div className='delete-button'>
-            <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
-          </div>
-          <div className='events-category'>
-              <ul>
-                  <li>
-                    <Link to='/events/prize-giving'>Prize Giving Day</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/visiting-day'>Visiting Day</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/parents-meeting'>Parents Meeting</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/science-fair'>Science & Engineering Fair </Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/music-festivals'>Music, Arts & Culture</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/games'>Games & Sports</Link>
-                  </li>
-              </ul>
-              <ul>
-                  <li>
-                    <Link to='/events/school-trips'>School Trips</Link>
-                  </li>
-              </ul>
-          </div>
         </div>
         <div className='events-rightside'>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -109,15 +69,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Prize Giving Day
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/>
+              <Typography><strong>Date : 12/07/2022</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/prize-giving'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -127,15 +87,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Visiting Day
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/>
+              <Typography><strong>Date : 18/05/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/visiting-day'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -145,15 +105,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Parents Meeting
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/>
+              <Typography><strong>Date : 10/02/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/parents-meeting'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -163,15 +123,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Science & Engineering Fair
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/>
+              <Typography><strong>Date : 02/08/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/science-fair'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -181,15 +141,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Music, Arts & Culture
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/>
+              <Typography><strong>Date : 22/06/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/music-festivals'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -199,15 +159,15 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 Games & Sports
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/> 
+              <Typography><strong>Date : 02/05/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/games'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card' sx={{ maxWidth: 300 }}>
+          <Card className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -217,12 +177,12 @@ const Events = () => {
               <Typography gutterBottom variant="h6" component="div">
                 School Holiday Trips
               </Typography>
-              <Typography variant="body2" color="text.secondary">
-              As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do.
-              </Typography>
+              <hr/> 
+              <Typography><strong>Date : 10/08/2023</strong></Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{display:'flex', justifyContent:'space-between'}}>
               <Button className='card-link' size="small"><Link to='/events/school-trips'>See More Details</Link></Button>
+              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
         </div>

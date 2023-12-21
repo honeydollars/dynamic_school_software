@@ -58,7 +58,7 @@ label{
 textarea{
     display: flex;
     width: 500px;
-    height: 100px;
+    height: 150px;
     padding:5px;
 }
 
@@ -75,7 +75,7 @@ textarea{
 }
 
 /* CSS Media Queries */
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1440px) {
     .contact-form{
         width: auto;
         margin: auto;
@@ -97,6 +97,7 @@ textarea{
 
     .contact-container{
         margin:auto;
+        height: auto;
     }
 
     .contact-container h1{
@@ -139,6 +140,7 @@ textarea{
 
     .contact-container{
         margin:auto;
+        height: auto;
     }
 
     .contact-container h1{
@@ -181,6 +183,7 @@ textarea{
 
     .contact-container{
         margin:auto;
+        height: auto;
     }
 
     .contact-container h1{

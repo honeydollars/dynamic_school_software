@@ -73,9 +73,13 @@ input{
 }
 
 /* CSS Media Queries */
-@media screen and (max-width:1280px){
+@media screen and (max-width:1440px){
     .exams-container{
         width:auto;
+        height:auto;
+    }
+
+    .exams-content{
         height:auto;
     }
 
