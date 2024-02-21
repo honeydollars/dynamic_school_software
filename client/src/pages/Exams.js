@@ -8,7 +8,7 @@ import '../styles/Exams.css';
 
 const Exams = () => {
 
-  /**create table data function */
+  /**create students table data */
   function CreateTableData(
     name, english, kiswahili, mathematics, biology,
     chemistry, physics, history, geography, cre, 
@@ -20,8 +20,15 @@ const Exams = () => {
         };
     };
 
-  /**create table rows data */  
-  const rows = [
+    /**create kcse marks table analysis */
+    function CreateTableAnalysis(
+      grade, numberObtained, percentage , kcse2023, kcse2022, kcse2021 
+    ){
+      return {grade, numberObtained, percentage, kcse2023, kcse2022, kcse2021}
+    }
+
+  /**create students table rows data */  
+  const studentRows = [
     CreateTableData('Maina Evelyne Wambui', 'A', 'A', 'A', 'A-', 'A', 'A', 'A', '-', 'A', 'A','-','-', 'A'),
     CreateTableData('Njeri Precious Waithira', 'A', 'A', 'A', '-', 'A-', 'A', 'A', 'A-', '-', 'A','A','-', 'A'),
     CreateTableData('Mwangi John Isaac', 'A', 'A', 'A', 'A', 'A', '-', 'A', 'A-', '-', '-','-','A', 'A'),
@@ -29,6 +36,22 @@ const Exams = () => {
     CreateTableData('Kipkirui Daniel Langat ', 'A-', 'A-', 'A', '-', 'A-', '-', 'A-', 'A-', '-','A-','-','A-', 'A-'),
     CreateTableData('Kariuki Esther Wanja', 'A-', 'A', 'A', 'A-', 'A', '-', 'A', '-', 'A', 'A-','-','A-', 'A-')
   ];
+
+  /**create kcse marks table rows data */
+  const kcseRows = [
+    CreateTableAnalysis('A', '5', '7%', '7%', '7%', '23%'),
+    CreateTableAnalysis('A-', '15', '20%', '28%', '34%', '48%'),
+    CreateTableAnalysis('B+', '47', '25%', '53%', '57%', '77%'),
+    CreateTableAnalysis('B', '35', '17%', '27%', '47%', '53%'),
+    CreateTableAnalysis('B-', '45', '37%', '22%', '37%', '83%'),
+    CreateTableAnalysis('C+', '28', '22%', '18%', '35%', '44%'),
+    CreateTableAnalysis('C', '35', '17%', '47%', '44%', '53%'),
+    CreateTableAnalysis('C-', '30', '25%', '16%', '22%', '23%'),
+    CreateTableAnalysis('D+', '25', '27%', '17%', '22%', '35%'),
+    CreateTableAnalysis('D', '5', '7%', '17%', '15%', '22%'),
+    CreateTableAnalysis('D-', '15', '17%', '22%', '19%', '27%'),
+    CreateTableAnalysis('E', '3', '5%', '7%', '7%', '13%'),
+  ]
 
   return (
     <div className='exams-container'>
@@ -154,8 +177,8 @@ const Exams = () => {
           </div>
         </div>
         <div className='exams-rightside'>
-          <h2>KCSE RESULTS</h2>
-          <TableContainer component={Paper}>
+        <h2>KCSE RESULTS</h2>
+          <TableContainer component={Paper} sx={{marginBottom:'100px'}}>
             <Table size='small' sx={{minWidth:'600'}} aria-label='simple-table'>
               <TableHead>
                 <TableCell sx={{fontWeight:'600'}}>Name</TableCell>
@@ -174,7 +197,7 @@ const Exams = () => {
                 <TableCell align='center' sx={{fontWeight:'600'}}>Mean Grade</TableCell>
               </TableHead>
               <TableBody>
-                {rows.map((row)=>(
+                {studentRows.map((row)=>(
                   <TableRow key={row.name}>
                     <TableCell component='th' scope='row'>{row.name}</TableCell>
                     <TableCell align='center'>{row.english}</TableCell>
@@ -190,6 +213,32 @@ const Exams = () => {
                     <TableCell align='center'>{row.business}</TableCell>
                     <TableCell align='center'>{row.agriculture}</TableCell>
                     <TableCell align='center' sx={{fontWeight:'600'}}>{row.avgmean}</TableCell>
+                  </TableRow>
+                  )) 
+                }
+              </TableBody>
+            </Table>
+          </TableContainer>
+          <h2>KCSE Analysis</h2>
+          <TableContainer component={Paper}  sx={{marginBottom:'100px'}}>
+            <Table size='small' sx={{minWidth:'600'}} aria-label='simple-table'>
+              <TableHead>
+                <TableCell sx={{fontWeight:'600'}}>Grade</TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>Number Obtained</TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>Percentage</TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>KCSE 2023</TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>KCSE 2022</TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>KCSE 2021</TableCell>
+              </TableHead>
+              <TableBody>
+                {kcseRows.map((row)=>(
+                  <TableRow key={row.name}>
+                    <TableCell component='th' scope='row'>{row.grade}</TableCell>
+                    <TableCell align='center'>{row.numberObtained}</TableCell>
+                    <TableCell align='center'>{row.percentage}</TableCell>
+                    <TableCell align='center'>{row.kcse2023}</TableCell>
+                    <TableCell align='center'>{row.kcse2022}</TableCell>
+                    <TableCell align='center'>{row.kcse2021}</TableCell>
                   </TableRow>
                   )) 
                 }

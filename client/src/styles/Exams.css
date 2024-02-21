@@ -12,7 +12,7 @@
 }
 
 .exams-container{
-    height:100vh;
+    height:auto;
     font-family: var(--var-font-family);
     margin-bottom: 30px;
 }
@@ -70,6 +70,10 @@ label{
 
 input{
     cursor: pointer;
+}
+
+.even{
+    background-color:#d3d3d3;
 }
 
 /* CSS Media Queries */
