@@ -22,9 +22,9 @@ const Exams = () => {
 
     /**create kcse marks table analysis */
     function CreateTableAnalysis(
-      grade, numberObtained, percentage , kcse2023, kcse2022, kcse2021 
+      grade, numberObtained, percentage , kcse2023, kcse2022, kcse2021, allStudents, meanGrade 
     ){
-      return {grade, numberObtained, percentage, kcse2023, kcse2022, kcse2021}
+      return {grade, numberObtained, percentage, kcse2023, kcse2022, kcse2021, allStudents, meanGrade}
     }
 
   /**create students table rows data */  
@@ -39,18 +39,20 @@ const Exams = () => {
 
   /**create kcse marks table rows data */
   const kcseRows = [
-    CreateTableAnalysis('A', '5', '7%', '7%', '7%', '23%'),
-    CreateTableAnalysis('A-', '15', '20%', '28%', '34%', '48%'),
-    CreateTableAnalysis('B+', '47', '25%', '53%', '57%', '77%'),
-    CreateTableAnalysis('B', '35', '17%', '27%', '47%', '53%'),
-    CreateTableAnalysis('B-', '45', '37%', '22%', '37%', '83%'),
-    CreateTableAnalysis('C+', '28', '22%', '18%', '35%', '44%'),
-    CreateTableAnalysis('C', '35', '17%', '47%', '44%', '53%'),
-    CreateTableAnalysis('C-', '30', '25%', '16%', '22%', '23%'),
-    CreateTableAnalysis('D+', '25', '27%', '17%', '22%', '35%'),
-    CreateTableAnalysis('D', '5', '7%', '17%', '15%', '22%'),
-    CreateTableAnalysis('D-', '15', '17%', '22%', '19%', '27%'),
-    CreateTableAnalysis('E', '3', '5%', '7%', '7%', '13%'),
+    CreateTableAnalysis('All Students', '', '', '', '280', '300', '275'),
+    CreateTableAnalysis('Mean Grade', '', '', '', 'B+', 'B', 'B'),
+    CreateTableAnalysis('', 'A', '5', '7%',  '7%', '7%', '23%'),
+    CreateTableAnalysis('', 'A-', '15', '20%',  '28%', '34%', '48%'),
+    CreateTableAnalysis('', 'B+', '47', '25%',  '53%', '57%', '77%'),
+    CreateTableAnalysis('', 'B', '35', '17%',  '27%', '47%', '53%'),
+    CreateTableAnalysis('', 'B-', '45', '37%',  '22%', '37%', '83%'),
+    CreateTableAnalysis('', 'C+', '28', '22%',  '18%', '35%', '44%'),
+    CreateTableAnalysis('', 'C', '35', '17%',  '47%', '44%', '53%'),
+    CreateTableAnalysis('', 'C-', '30', '25%',  '16%', '22%', '23%'),
+    CreateTableAnalysis('', 'D+', '25', '27%',  '17%', '22%', '35%'),
+    CreateTableAnalysis('', 'D', '5', '7%',  '17%',  '15%', '22%'),
+    CreateTableAnalysis('', 'D-', '15', '17%',  '22%',  '19%', '27%'),
+    CreateTableAnalysis('', 'E', '3', '5%',  '7%', '7%',  '13%'),
   ]
 
   return (
@@ -223,7 +225,8 @@ const Exams = () => {
           <TableContainer component={Paper}  sx={{marginBottom:'100px'}}>
             <Table size='small' sx={{minWidth:'600'}} aria-label='simple-table'>
               <TableHead>
-                <TableCell sx={{fontWeight:'600'}}>Grade</TableCell>
+                <TableCell sx={{fontWeight:'600'}}></TableCell>
+                <TableCell align='center' sx={{fontWeight:'600'}}>Grade</TableCell>
                 <TableCell align='center' sx={{fontWeight:'600'}}>Number Obtained</TableCell>
                 <TableCell align='center' sx={{fontWeight:'600'}}>Percentage</TableCell>
                 <TableCell align='center' sx={{fontWeight:'600'}}>KCSE 2023</TableCell>
@@ -239,6 +242,8 @@ const Exams = () => {
                     <TableCell align='center'>{row.kcse2023}</TableCell>
                     <TableCell align='center'>{row.kcse2022}</TableCell>
                     <TableCell align='center'>{row.kcse2021}</TableCell>
+                    <TableCell align='center'>{row.allStudents}</TableCell>
+                    <TableCell align='center'>{row.meanGrade}</TableCell>
                   </TableRow>
                   )) 
                 }
