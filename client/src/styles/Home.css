@@ -57,13 +57,13 @@
 .leftside-content{
     border:1px solid lightgray;
     border-radius: 5px;
-    margin-top:5px;
-    padding: 40px 60px;
+    padding: 20px 15px;
+    margin-top: 10px;
     background-color: rgb(235, 238, 240);
 }
 
 .leftside-content h3{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .leftside-content p{
@@ -147,17 +147,16 @@
 
 @media screen and (max-width: 768px) {
     .homepage-container{
-        width:auto;
-        height:auto;
+        width: 100%;
     }
 
-    .leftside-content{
-        margin: auto;
+    .homepage-content{
+        width: 95%;
     }
 
     .input{
         width:300px;
-        height:35px;
+        height: 25px;
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 2px;
@@ -173,11 +172,13 @@
 
 @media screen and (max-width: 578px) {
     .homepage-container{
+        width: 100%;
         margin:0;
         padding: 80px 0;
     }
 
     .homepage-content{
+        width: 90%;
         display: block;
         margin:0;
     }
@@ -203,12 +204,13 @@
 
 @media screen and (max-width: 390px) {
     .homepage-container{
+        width: 100%;
         margin:0;
         padding: 80px 0;
     }
 
     .homepage-content{
-        display: block;
+        width: 90%;
         margin:0;
     }
 
@@ -231,33 +233,4 @@
     }
 }
 
-@media screen and (max-width: 360px){
-    .homepage-container{
-        margin:0;
-        max-width: auto;
-    }
-
-    .homepage-content{
-        display: block;
-        margin:0;
-    }
-
-    .leftside-content h3{
-        font-size: 30px;
-    }
-
-    .p{
-        font-size: 21px;
-    }
-
-    .carousel{
-        display: block;
-    }
-
-    .carousel-images{
-        height:200px;
-        margin: 0;
-        padding: 0;
-    }
-}
 
