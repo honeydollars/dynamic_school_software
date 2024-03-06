@@ -1,10 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Slider from '../components/Slider';
 import '../styles/Home.css';
 import {Box, Modal, Button, Typography} from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Home = () => {
 
@@ -26,11 +28,15 @@ const Home = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+  }, [])
+
   return (
     <div className='homepage-container'>
       <div className='homepage-content'>
         <Slider/>
-        <div className='leftside-content'>
+        <div  data-aos="fade-right" className='leftside-content'>
           <div className='homepage-edit-button'>
             <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
             <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
