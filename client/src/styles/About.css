@@ -15,6 +15,7 @@
     height: 100vh;
     margin-bottom: 100px;
     font-family: var(--var-font-family);
+    padding: 100px 0;
 }
 
 .about-container h1{

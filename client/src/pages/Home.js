@@ -31,37 +31,37 @@ const Home = () => {
       <div className='homepage-content'>
         <Slider/>
         <div className='leftside-content'>
-        <div className='homepage-edit-button'>
-          <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
-          <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-            <Box sx={styleModal}>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                 Edit Homepage Content
-                 <hr/>
-              </Typography>
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                <label htmlFor='heading'>Heading*</label>
-                <input type='text' id='heading' placeholder='Enter text here' className='input'></input>
-              </Typography>
-              <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                <label htmlFor='webcontent'>Web Content*</label>
-                <textarea id='webcontent' placeholder='Enter message here!' className='textarea'></textarea>
-              </Typography>
-              <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
-                  <label htmlFor='carouselimage'>Carousel Image*</label>
-                  <input type='file' id='carouselimage' className='input'></input>
-              </Typography>
-              <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
-                  <label htmlFor='footertext'>Footer*</label>
-                  <input type='text' id='footertext' placeholder='Enter text here' className='input'></input>
-              </Typography>
-              <Button variant='contained' sx={{mt:2}}>Save</Button>
-            </Box>
-          </Modal>
-        </div>
-        <div className='delete-button'>
-          <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
-        </div>
+          <div className='homepage-edit-button'>
+            <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
+            <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+              <Box sx={styleModal}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Edit Homepage Content
+                  <hr/>
+                </Typography>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  <label htmlFor='heading'>Heading*</label>
+                  <input type='text' id='heading' placeholder='Enter text here' className='input'></input>
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  <label htmlFor='webcontent'>Web Content*</label>
+                  <textarea id='webcontent' placeholder='Enter message here!' className='textarea'></textarea>
+                </Typography>
+                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
+                    <label htmlFor='carouselimage'>Carousel Image*</label>
+                    <input type='file' id='carouselimage' className='input'></input>
+                </Typography>
+                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
+                    <label htmlFor='footertext'>Footer*</label>
+                    <input type='text' id='footertext' placeholder='Enter text here' className='input'></input>
+                </Typography>
+                <Button variant='contained' sx={{mt:2}}>Save</Button>
+              </Box>
+            </Modal>
+          </div>
+          <div className='delete-button'>
+            <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
+          </div>
           <Typography variant='h3' align='center'>Top Scorers Academy</Typography>
           <hr className='horizontal'/>
           <input type='checkbox' id='cbox' name='cbox'></input> 
