@@ -2,10 +2,10 @@ import React from 'react';
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 import '../styles/Navbar.css';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { LoginOutlined } from '@mui/icons-material';
 import {Drawer, Button, Box} from '@mui/material';
 import Logo from '../assets/logo.png';
+import { Icon } from '@iconify/react';
 
 const Navbar = () => {
 
@@ -16,85 +16,66 @@ const Navbar = () => {
   return (
     <div className='header-container'>
       <div className='navbar-container'>
-        <div className='hamburger'>
-          <Button onClick={handleOpen}>
-              <MenuOpenIcon/>
-          </Button>
-          <Drawer anchor='left' open={open} onClose={handleClose}>
-            <Box p={2} width='250px' textAlign='center' role='presentation'>
-              <div className='mobile-navbar-logo'>
-                <img src={Logo} alt='logo'/>
-                <p>Top Scorers Academy</p>
-              </div>
-              <hr/>
-              <div className='mobile-navbar-links'>
-                <nav>
-                  <ul>
-                    <li className='btn active'>
-                      <Link to='/'>Home</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='btn'>
-                      <Link to='/events'>School Events</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='btn'>
-                      <Link to='/about'>About Us</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='btn'>
-                      <Link to='/exams'>Exam Results</Link>
-                    </li>
-                  </ul>
-                  <ul>
-                    <li className='btn'>
-                      <Link to='/contact'>Contact Us</Link>
-                    </li>
-                  </ul>
-                </nav>
-                <div className='mobile-myaccount'>
-                  <Button variant='contained' href='/login' endIcon={<LoginOutlined/>}>Login</Button>  
+        <div className='navbar-content'>
+          <div className='hamburger'>
+            <Button onClick={handleOpen}>
+              <Icon icon="heroicons-outline:menu-alt-3" width={30} height={30}/>
+            </Button>
+            <Drawer anchor='left' open={open} onClose={handleClose}>
+              <Box width='300px' textAlign='center' role='presentation'>
+                <div className='mobile-navbar-logo'>
+                  <img src={Logo} alt='logo'/>
+                  <p>Top Scorers <br/> Academy</p>
                 </div>
-              </div>
-            </Box>
-          </Drawer>
-        </div>
-        <div className='navbar-logo'>
-          <img src={Logo} alt='logo'/>
-        </div>
-        <div className='navbar-links'>
-          <nav id='nav-container'>
+                <hr/>
+                <div className='mobile-navbar-links'>
+                    <ul>
+                      <li className='btn active'>
+                        <Link to='/'><Icon icon="ion:home" width={20} height={20}/> Home</Link>
+                      </li>
+                      <li>
+                        <Link to='/events'><Icon icon="material-symbols:event" width={20} height={20}/> School Events</Link>
+                      </li>
+                      <li>
+                        <Link to='/about'><Icon icon="mdi:about" width={20} height={20}/> About Us</Link>
+                      </li>
+                      <li>
+                        <Link to='/exams'><Icon icon="ph:exam-fill" width={20} height={20}/> Exam Results</Link>
+                      </li>
+                      <li>
+                        <Link to='/contact'><Icon icon="ic:round-contact-phone" width={20} height={20}/> Contact Us</Link>
+                      </li>
+                    </ul>
+                  <div className='mobile-myaccount'>
+                    <Button variant='contained' href='/login' endIcon={<LoginOutlined/>}>Login</Button>  
+                  </div>
+                </div>
+              </Box>
+            </Drawer>
+          </div>
+          <div className='navbar-logo'>
+            <a href='/'><img src={Logo} alt='logo'/></a>
+            <a href='/' className='navbar-logo-text'>top scorers <br/> academy </a>
+          </div>
+          <div className='navbar-links'>
             <ul>
-              <li className='btn active'>
+              <li className='active'>
                 <Link to='/'>Home</Link>
               </li>
-            </ul>
-            <ul>
-              <li className='btn'>
+              <li>
                 <Link to='/events'>School Events</Link>
               </li>
-            </ul>
-            <ul>
-              <li className='btn'>
+              <li>
                 <Link to='/about'>About Us</Link>
               </li>
-            </ul>
-            <ul>
-              <li className='btn'>
+              <li>
                 <Link to='/exams'>Exam Results</Link>
               </li>
-            </ul>
-            <ul>
-              <li className='btn'>
+              <li>
                 <Link to='/contact'>Contact Us</Link>
               </li>
             </ul>
-          </nav>
-          <div className='myaccount'>
-            <Button variant='contained' href='/login' endIcon={<LoginOutlined/>} sx={{border:'none'}}>Login</Button>  
+            <div className='navbar-login'><Link to='/login'>Login  <Icon icon="material-symbols:login"  width={20} height={20}/></Link></div>
           </div>
         </div>
       </div>
