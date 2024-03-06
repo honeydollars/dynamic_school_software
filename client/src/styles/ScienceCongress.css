@@ -12,6 +12,7 @@
 }
 
 .sciencefairday-container{
+    padding: 100px 0;
     height:auto;
     font-family: var(--var-font-family);
     margin-bottom: 50px;
