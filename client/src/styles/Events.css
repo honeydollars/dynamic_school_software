@@ -63,7 +63,7 @@
     margin:5px;
     cursor:pointer;
     border:1px solid lightgray;
-    width: 300px;
+    width: 320px;
 }
 
 card:hover{
@@ -134,11 +134,11 @@ card:hover{
 
 @media screen and (max-width: 968px) {
     .events-container{
-        width: auto;
-        height:auto;
+        width: 100%;
     }
     
     .events-content{
+        width: 90%;
         display: block;
     }
 
@@ -167,11 +167,11 @@ card:hover{
 
 @media screen and (max-width: 768px) {
     .events-container{
-        width: auto;
-        height:auto;
+        width: 100%;
     }
     
     .events-content{
+        width:90%;
         display: block;
     }
 
@@ -200,11 +200,11 @@ card:hover{
 
 @media screen and (max-width: 578px){
     .events-container{
-        width: auto;
-        height:auto;
+        width: 100%;
     }
 
     .events-content{
+        width: 90%;
         display: block;
     }
 
@@ -234,11 +234,11 @@ card:hover{
 
 @media screen and (max-width: 390px){
     .events-container{
-        width: auto;
-        height:auto;
+        width: 100%;
     }
 
     .events-content{
+        width: 90%;
         display: block;
     }
 

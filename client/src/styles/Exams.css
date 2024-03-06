@@ -148,11 +148,11 @@ input{
 
 @media screen and (max-width:768px){
     .exams-container{
-        width:auto;
-        height:auto;
+        width: 100%;
     }
 
     .exams-content{
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -178,11 +178,11 @@ input{
 
 @media screen and (max-width:578px){
     .exams-container{
-        width:auto;
-        height:auto;
+        width: 100%;
     }
 
     .exams-content{
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -208,11 +208,12 @@ input{
 
 @media screen and (max-width:390px){
     .exams-container{
-        width:auto;
+        width:100%;
         height:auto;
     }
 
     .exams-content{
+        width: 100%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
