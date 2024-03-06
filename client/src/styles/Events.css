@@ -168,6 +168,7 @@ card:hover{
 @media screen and (max-width: 768px) {
     .events-container{
         width: 100%;
+        height: auto;
     }
     
     .events-content{
@@ -201,6 +202,7 @@ card:hover{
 @media screen and (max-width: 578px){
     .events-container{
         width: 100%;
+        height: auto;
     }
 
     .events-content{
@@ -222,7 +224,6 @@ card:hover{
     }
 
     .events-rightside{
-        width: auto;
         display:flex;
         flex-wrap: wrap;
     }
@@ -235,6 +236,7 @@ card:hover{
 @media screen and (max-width: 390px){
     .events-container{
         width: 100%;
+        height: auto;
     }
 
     .events-content{
@@ -248,40 +250,6 @@ card:hover{
 
     .events-category ul li:hover{
         background-color:none;
-    }
-    
-    .events-leftside{
-        width: auto;
-        font-size: 18px;
-    }
-
-    .events-rightside{
-        width: auto;
-        display:flex;
-        flex-wrap: wrap;
-    }
-
-    .events-category ul li:hover{
-        background-color: none;
-    }
-}
-
-@media screen and (max-width: 360px){
-    .events-container{
-        width: auto;
-        height:auto;
-    }
-
-    .events-container h1{
-        font-size: 30px;
-    }
-
-    .events-content{
-        display: block;
-    }
-
-    .events-category{
-        display: block;
     }
     
     .events-leftside{
