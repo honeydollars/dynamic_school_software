@@ -37,10 +37,13 @@ const Navbar = () => {
                         <Link to='/events'><Icon icon="material-symbols:event" width={20} height={20}/> School Events</Link>
                       </li>
                       <li>
+                        <Link to='/exams'><Icon icon="ph:exam-fill" width={20} height={20}/> Exams Results</Link>
+                      </li>
+                      <li>
                         <Link to='/about'><Icon icon="mdi:about" width={20} height={20}/> About Us</Link>
                       </li>
                       <li>
-                        <Link to='/exams'><Icon icon="ph:exam-fill" width={20} height={20}/> Exam Results</Link>
+                        <Link to='/gallery'><Icon icon="mdi:about" width={20} height={20}/> Our Gallery</Link>
                       </li>
                       <li>
                         <Link to='/contact'><Icon icon="ic:round-contact-phone" width={20} height={20}/> Contact Us</Link>
@@ -63,16 +66,19 @@ const Navbar = () => {
                 <Link to='/'>Home</Link>
               </li>
               <li>
-                <Link to='/events'>School Events</Link>
-              </li>
-              <li>
-                <Link to='/about'>About Us</Link>
+                <Link to='/events'>Events</Link>
               </li>
               <li>
                 <Link to='/exams'>Exam Results</Link>
               </li>
               <li>
-                <Link to='/contact'>Contact Us</Link>
+                <Link to='/about'>About</Link>
+              </li>
+              <li>
+                <Link to='/gallery'>Gallery</Link>
+              </li>
+              <li>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
             <div className='navbar-login'><Link to='/login'>Login  <Icon icon="material-symbols:login"  width={20} height={20}/></Link></div>

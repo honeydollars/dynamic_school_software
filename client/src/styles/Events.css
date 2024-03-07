@@ -45,8 +45,6 @@
     font-size: 21px;
 }
 
-
-
 .eventspage-edit-button{
     display:flex;
     justify-content: flex-end;
@@ -60,10 +58,10 @@
 }
 
 .card{
-    margin:5px;
+    margin:10px;
     cursor:pointer;
     border:1px solid lightgray;
-    width: 320px;
+    width: 300px;
 }
 
 card:hover{

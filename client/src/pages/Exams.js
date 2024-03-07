@@ -1,12 +1,23 @@
 import React from 'react';
+import { useEffect } from 'react';
 import {
   Typography, TableContainer, Table, TableHead, TableRow, TableBody,
   TableCell, Paper, Accordion, AccordionSummary, AccordionDetails,
  } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import '../styles/Exams.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Exams = () => {
+
+  useEffect(()=>{
+    Aos.init(()=>{
+      Aos.init({
+        duration: 2000
+      });
+    }, []);
+  })
 
   /**create students table data */
   function CreateTableData(
@@ -60,7 +71,7 @@ const Exams = () => {
       <Typography variant='h1'>Exams</Typography>
       <hr className='horizontal'/>
       <div className='exams-content'>
-        <div className='exams-leftside'>
+        <div data-aos='fade-up-right' className='exams-leftside'>
           <div className='exams-filter'>
             <div>
               <input type='checkbox' name='kcse' id='kcse'></input>
@@ -178,9 +189,9 @@ const Exams = () => {
             </Accordion>
           </div>
         </div>
-        <div className='exams-rightside'>
+        <div data-aos='fade-up-left' className='exams-rightside'>
         <h2>KCSE RESULTS</h2>
-          <TableContainer component={Paper} sx={{marginBottom:'100px'}}>
+          <TableContainer data-aos='zoom-in-up' component={Paper} sx={{marginBottom:'100px'}}>
             <Table size='small' sx={{minWidth:'600'}} aria-label='simple-table'>
               <TableHead>
                 <TableCell sx={{fontWeight:'600'}}>Name</TableCell>
@@ -222,7 +233,7 @@ const Exams = () => {
             </Table>
           </TableContainer>
           <h2>KCSE Analysis</h2>
-          <TableContainer component={Paper}  sx={{marginBottom:'100px'}}>
+          <TableContainer data-aos='zoom-in-up' component={Paper}  sx={{marginBottom:'100px'}}>
             <Table size='small' sx={{minWidth:'600'}} aria-label='simple-table'>
               <TableHead>
                 <TableCell sx={{fontWeight:'600'}}></TableCell>
