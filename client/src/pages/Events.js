@@ -66,7 +66,7 @@ const Events = () => {
             </Modal>
           </div>
         </div>
-        <div data-aos='zoom-in-up' className='events-rightside'>
+        <div data-aos='zoom-up' className='events-rightside'>
           <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
