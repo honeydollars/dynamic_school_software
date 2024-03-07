@@ -26,7 +26,7 @@ const Gallery = () => {
         <div className='gallery-container'>
             <Typography variant='h1'>Gallery</Typography>
             <hr className='horizontal'/>
-                <div data-aos='fade-up-right' className='gallery-image-container'>
+                <div data-aos='zoom-up' className='gallery-image-container'>
                     <div data-aos='fade-up' className='gallery-image'>
                         <img src={galleryImage} alt='gallery1'/>
                     </div>
