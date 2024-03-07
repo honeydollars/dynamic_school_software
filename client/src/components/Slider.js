@@ -1,10 +1,19 @@
 import React from 'react';
+import { useEffect } from 'react';
 import Carousel from 'react-material-ui-carousel';
 import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
 import background from '../assets/landingpage.avif';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Slider = () => {
+
+  useEffect(()=>{
+    Aos.init({
+      duration: 2000
+    });
+  }, []);
 
   const items = [
     {
@@ -40,7 +49,7 @@ function Item(props)
 }
 
   return (
-    <div className='carousel'>
+    <div data-aos='fade-down-right' className='carousel'>
       <Carousel sx={{mt:0, mb:1}}>
           {items.map( (item, i) => <Item key={i} item={item} /> )}
       </Carousel>

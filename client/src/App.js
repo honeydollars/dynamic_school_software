@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Events from './pages/Events';
 import Exams from './pages/Exams';
 import About from './pages/About';
+import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
@@ -29,6 +30,7 @@ function App() {
           <Route path='/events' element={<Events/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/exams' element={<Exams/>}></Route>
+          <Route path='/gallery' element={<Gallery/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/signup' element={<Signup/>}></Route>

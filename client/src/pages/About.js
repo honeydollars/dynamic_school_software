@@ -12,7 +12,8 @@ import {Box, Modal } from '@mui/material';
 import Button from '@mui/material/Button';
 import AboutImage from '../assets/background.jpg';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
-import axios from 'axios';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
   
@@ -29,6 +30,12 @@ const About = () => {
     p: 4,
   };
 
+  useEffect(()=>{
+    Aos.init({
+      duration:2000
+    });
+  }, []);
+
   /**useNavigate custom hook for page navigation  */
   const navigate = useNavigate();
 
@@ -37,21 +44,11 @@ const About = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-  /**useState custom hook to set state of response data */
-  const[data, setData] = useState([]);
-
-  /** useEffect custom hook,using axios to fetch data from db.json */
-  useEffect(()=> {
-    axios.get('http://localhost:3031/about')
-    .then(res => setData(res.data))
-    .catch(err => console.log(err))
-  }, [])
-
   /**submit button click event */
   function handleSubmit(event){
     event.preventDefault();
     alert("Save Successful!");
-    navigate('/');
+    navigate('/');  
   }
 
   return (
@@ -59,61 +56,70 @@ const About = () => {
       <Typography variant='h1'>About</Typography>
       <hr className='horizontal'/>
       <div className='about-content'>
-        {data.map((content, index) =>{
-          return(
-          <div key={index}>
-            <div className='aboutpage-edit-button'>
-              <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
-              <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                <Box sx={style}>
-                  <Typography id="modal-modal-title" variant="h6" component="h2">
-                    Edit Aboutpage Content
-                    <hr/>
-                  </Typography>
-                  <Typography id="modal-modal-title" variant="h6" component="h2">
-                      <label htmlFor='aboutheader'>Heading *</label>
-                      <input type='text' defaultValue={content.mission} id='aboutheader' placeholder='Enter text here' className='input'></input>
-                  </Typography>
-                  <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                    <label htmlFor='aboutcontent'>About Content *</label>
-                    <textarea id='aboutcontent' defaultValue={content.description3} placeholder='Enter message here!' className='textarea'></textarea>
-                  </Typography>
-                  <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
-                      <label htmlFor='aboutimage'>About Image *</label>
-                      <input type='file' id='aboutimage' className='input'></input>
-                  </Typography>
-                  <Button variant='contained' sx={{mt:2}} onClick={handleSubmit}>Save</Button>
-                </Box>
-              </Modal>
+        <div>
+          <div className='aboutpage-edit-button'>
+            <Button variant='contained' startIcon={<EditIcon/>} onClick={handleOpen}>Edit</Button>
+            <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Edit Aboutpage Content
+                  <hr/>
+                </Typography>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                    <label htmlFor='aboutheader'>Heading *</label>
+                    <input type='text' defaultValue= '' id='aboutheader' placeholder='Enter text here' className='input'></input>
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  <label htmlFor='aboutcontent'>About Content *</label>
+                  <textarea id='aboutcontent' defaultValue='' placeholder='Enter message here!' className='textarea'></textarea>
+                </Typography>
+                <Typography id="modal-modal-title" variant="h6" component="h2" sx={{ mt: 2 }}>
+                    <label htmlFor='aboutimage'>About Image *</label>
+                    <input type='file' id='aboutimage' className='input'></input>
+                </Typography>
+                <Button variant='contained' sx={{mt:2}} onClick={handleSubmit}>Save</Button>
+              </Box>
+            </Modal>
+          </div>
+          <div className='delete-button'>
+            <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
+          </div>
+          <div data-aos='fade-up-right' className='about-page-header'>
+            <div data-aos='fade-right' className='about-page-image'>
+              <img src={AboutImage} alt='school-compound'></img>
             </div>
-            <div className='delete-button'>
-              <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
+            <div data-aos='fade-left'>
+              <Typography paragraph={true}>
+                We are delighted to extend a warm and heartfelt welcome to students, parents, staff, and visitors to our school's virtual home. At Top Scorers Academy, we believe in the transformative power of education and the boundless potential that lies within each individual.
+              </Typography>
+              <Typography paragraph={true}>
+                Our school is more than just a physical space; it's a vibrant community where curiosity is nurtured, talents are honed, and lifelong friendships are forged. As you explore our website, you'll discover the diverse array of programs, activities, and opportunities that make up the tapestry of our educational journey.
+              </Typography>
+              <Typography paragraph={true}>
+                From our dedicated and passionate educators to our state-of-the-art facilities, every aspect of Top Scorers Academy is designed to create an environment where learning is exciting, interactive, and meaningful. We foster not only academic excellence but also character development, critical thinking, and a sense of responsibility to the global community.
+              </Typography>
+              <Typography paragraph={true}>
+                As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do. We are committed to open communication and collaboration, so please don't hesitate to reach out if you have any questions or if there's anything we can assist you with.
+              </Typography>
             </div>
-            <div className='about-page-header'>
-              <div className='about-page-image'>
-                <img src={AboutImage} alt='school-compound'></img>
-              </div>
-              <div>
-                <Typography paragraph={true}>{content.description1}</Typography>
-                <Typography paragraph={true}>{content.description2}</Typography>
-                <Typography paragraph={true}>{content.description3}</Typography>
-                <Typography paragraph={true}>{content.description4}</Typography>
-              </div>
+          </div>
+          <div data-aos='zoom-in-up' className='about-page-content'>
+            <div>
+              <Typography variant='h2'>Mission</Typography>
+              <hr className='horizontal'/>
+              <Typography sx={{mt:3}} paragraph={true}>
+                From our dedicated and passionate educators to our state-of-the-art facilities, every aspect of Top Scorers Academy is designed to create an environment where learning is exciting, interactive, and meaningful. We foster not only academic excellence but also character development, critical thinking, and a sense of responsibility to the global community.
+              </Typography>
             </div>
-            <div className='about-page-content'>
-              <div>
-                <Typography variant='h2'>{content.mission}</Typography>
-                <hr className='horizontal'/>
-                <Typography sx={{mt:3}} paragraph={true}>{content.description3}</Typography>
-              </div>
-              <div>
-                <Typography variant='h2'>{content.vision}</Typography>
-                <hr className='horizontal'/>
-                <Typography sx={{mt:3}} paragraph={true}>{content.description4}</Typography>
-              </div>
+            <div>
+              <Typography variant='h2'>Vision</Typography>
+              <hr className='horizontal'/>
+              <Typography sx={{mt:3}} paragraph={true}>
+                As you navigate through the pages of our website, you'll find essential information about our curriculum, extracurricular offerings, school events, and the values that underpin everything we do. We are committed to open communication and collaboration, so please don't hesitate to reach out if you have any questions or if there's anything we can assist you with.
+              </Typography>
             </div>
-          </div>);
-        })}
+          </div>
+        </div>
       </div>
       <div className='about-footer'>
         <Accordion>

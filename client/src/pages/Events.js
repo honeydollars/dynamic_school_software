@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {Box, Modal,Card,CardContent,CardMedia,CardActions,Button,Typography } from '@mui/material';
@@ -6,6 +6,8 @@ import '../styles/Events.css';
 import Image from '../assets/landingpage.avif';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Events = () => {
 
@@ -26,6 +28,12 @@ const Events = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  useEffect(()=>{
+    Aos.init({
+      duration: 2000
+    });
+  }, []);
 
   return (
     <div className='events-container'>
@@ -58,8 +66,8 @@ const Events = () => {
             </Modal>
           </div>
         </div>
-        <div className='events-rightside'>
-          <Card className='card'>
+        <div data-aos='zoom-in-up' className='events-rightside'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -77,7 +85,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -95,7 +103,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -113,7 +121,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -131,7 +139,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -149,7 +157,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -167,7 +175,7 @@ const Events = () => {
               <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
             </CardActions>
           </Card>
-          <Card className='card'>
+          <Card data-aos='fade-up' className='card'>
             <CardMedia
               sx={{ height: 140 }}
               image={Image}
@@ -189,6 +197,6 @@ const Events = () => {
       </div>
     </div>
   )
-}
+};
 
 export default Events;
