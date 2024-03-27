@@ -26,6 +26,9 @@ const Gallery = () => {
         <div className='gallery-container'>
             <Typography variant='h1'>Gallery</Typography>
             <hr className='horizontal'/>
+            <div>
+                <h2> April 2022 </h2>
+                <h4>12, Apr 2022</h4>
                 <div data-aos='zoom-up' className='gallery-image-container'>
                     <div data-aos='fade-up' className='gallery-image'>
                         <img src={galleryImage} alt='gallery1'/>
@@ -57,6 +60,28 @@ const Gallery = () => {
                     <div data-aos='fade-up' className='gallery-image'>
                         <img src={galleryImage9} alt='gallery10'/>
                     </div>
+                </div>
+                <h4>8, Apr 2022</h4>
+                <div data-aos='zoom-up' className='gallery-image-container'>
+                    <div data-aos='fade-up' className='gallery-image'>
+                        <img src={galleryImage} alt='gallery1'/>
+                    </div>
+                    <div data-aos='fade-up' className='gallery-image'>
+                        <img src={galleryImage1} alt='gallery2'/>
+                    </div>
+                    <div data-aos='fade-up' className='gallery-image'>
+                        <img src={galleryImage2} alt='gallery3'/>
+                    </div>
+                    <div data-aos='fade-up' className='gallery-image'>
+                        <img src={galleryImage} alt='gallery4'/>
+                    </div>
+                    <div data-aos='fade-up' className='gallery-image'>
+                        <img src={galleryImage7} alt='gallery5'/>
+                    </div>
+                </div>
+                <h2> February 2022 </h2>
+                <h4>10, feb 2022</h4>
+                <div data-aos='zoom-up' className='gallery-image-container'>
                     <div data-aos='fade-up' className='gallery-image'>
                         <img src={galleryImage2} alt='gallery11'/>
                     </div>
@@ -73,6 +98,7 @@ const Gallery = () => {
                         <img src={galleryImage1} alt='gallery15'/>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
   )
