@@ -68,11 +68,11 @@ const Home = () => {
           <div className='delete-button'>
             <Button variant='contained' endIcon={<DeleteForeverIcon/>} sx={{backgroundColor:'red'}}>Delete</Button>
           </div>
-          <Typography variant='h3' align='center'>Top Scorers Academy</Typography>
+          <Typography variant='h3' align='center'>Leshau Boys High School</Typography>
           <hr className='horizontal'/>
           <input type='checkbox' id='cbox' name='cbox'></input> 
           <Typography paragraph={true} className='p'>
-            We are delighted to extend a warm and heartfelt welcome to students, parents, staff, and visitors to our school's virtual home. At Top Scorers Academy, we believe in the transformative power of education and the boundless potential that lies within each individual.
+            We are delighted to extend a warm and heartfelt welcome to students, parents, staff, and visitors to our school's virtual home.
           </Typography>
           <Typography paragraph={true} className='p'>
             Our school is more than just a physical space;it's a vibrant community where curiosity is nurtured, talents are honed, and lifelong friendships are forged. As you explore our website, you'll discover the diverse array of programs, activities, and opportunities that make up the tapestry of our educational journey.

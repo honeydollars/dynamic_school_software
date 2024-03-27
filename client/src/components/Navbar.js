@@ -60,9 +60,9 @@ const Navbar = () => {
             <a href='/'><img src={Logo} alt='logo'/></a>
             <a href='/' className='navbar-logo-text'>top scorers <br/> academy </a>
           </div>
-          <div className='navbar-links'>
+          <div className='navbar-links' id='navlinks'>
             <ul>
-              <li className='active'>
+              <li>
                 <Link to='/'>Home</Link>
               </li>
               <li>
